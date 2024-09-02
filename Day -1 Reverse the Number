@@ -1,0 +1,10 @@
+def Rnumber(n):      #function to reverse
+    return int(str(n)[::-1])
+
+
+t = int(input())     #input from user
+
+
+for _ in range(t):      #Loop
+    n = int(input())
+    print(Rnumber(n))     #function call
