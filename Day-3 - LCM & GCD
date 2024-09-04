@@ -1,0 +1,14 @@
+import math
+
+def gcd_lcm(a, b):     #funtion creation
+    gcd_value = math.gcd(a, b)     #GCD extraction
+    
+    lcm_value = abs(a * b) // gcd_value    #LCM extraction
+    
+    return gcd_value, lcm_value
+
+A = int(input("Enter number for A"))     #dynamic entry
+B = int(input("Enter number for B"))
+gcd_value, lcm_value = gcd_lcm(A, B)
+print("GCD: {gcd_value}")     #print
+print("LCM: {lcm_value}")
