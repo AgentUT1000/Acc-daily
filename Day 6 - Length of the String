@@ -1,0 +1,8 @@
+def find_length(string):
+    count = 0
+    for char in string:
+        count += 1
+    return count
+input_string = "Hello, World!"
+length = find_length(input_string)
+print(f"'{input_string}' : {length}")
